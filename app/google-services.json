@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "826978607418",
+    "project_id": "sarprasfilkom-1bd06",
+    "storage_bucket": "sarprasfilkom-1bd06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826978607418:android:066a3de19e9042a757b003",
+        "android_client_info": {
+          "package_name": "com.example.sarprasfilkom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826978607418-qnlfcerbifah9si3rk1fcjvircqnnhot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaw6fdKEln5Sv12y9T0LdHw4wj4Fk1O6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826978607418-qnlfcerbifah9si3rk1fcjvircqnnhot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

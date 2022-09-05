@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentEditAccount">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Nama"
+            app:layout_constraintBottom_toBottomOf="@+id/et_editNama"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_editNama" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Email"
+            app:layout_constraintBottom_toBottomOf="@+id/et_editEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_editNama" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Password"
+            app:layout_constraintBottom_toBottomOf="@+id/et_editPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_editEmail" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="No. HP"
+            app:layout_constraintBottom_toBottomOf="@+id/et_editPhone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_editPassword" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_editNama"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/montserrat"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView44"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_editEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/montserrat"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView45"
+            app:layout_constraintTop_toBottomOf="@+id/et_editNama" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_editPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/montserrat"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView46"
+            app:layout_constraintTop_toBottomOf="@+id/et_editEmail" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_editPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/montserrat"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView47"
+            app:layout_constraintTop_toBottomOf="@+id/et_editPassword" />
+
+        <ImageView
+            android:id="@+id/IV_fotoProfile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_editPhone"
+            tools:src="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/btn_uploadFotoProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_uploadbtn"
+            android:fontFamily="@font/montserrat"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="change profile photo"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/IV_fotoProfile"
+            app:layout_constraintStart_toStartOf="@+id/IV_fotoProfile"
+            app:layout_constraintTop_toBottomOf="@+id/IV_fotoProfile" />
+
+        <Button
+            android:id="@+id/btn_submitProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_loginbtn"
+            android:fontFamily="@font/montserrat"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="simpan"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/btn_uploadFotoProfile"
+            app:layout_constraintStart_toStartOf="@+id/btn_uploadFotoProfile"
+            app:layout_constraintTop_toBottomOf="@+id/btn_uploadFotoProfile" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

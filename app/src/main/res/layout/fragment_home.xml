@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.FragmentHome">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnMtRoom"
+            android:layout_width="260dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_homebutton"
+            android:drawableLeft="@drawable/reportroom"
+            android:drawableTint="#000000"
+            android:fontFamily="@font/montserrat"
+            android:paddingStart="32dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:text="Pemeliharaan \nRuang"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnMtCar"
+            android:layout_width="260dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_homebutton"
+            android:fontFamily="@font/montserrat"
+            android:paddingStart="32dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:drawableLeft="@drawable/reportroom"
+            android:drawableTint="#000000"
+            android:text="Pemeliharaan \nkendaraan dinas"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMtRoom" />
+
+        <Button
+            android:id="@+id/btnRepair"
+            android:layout_width="260dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_homebutton"
+            android:drawableLeft="@drawable/reportroom"
+            android:drawableTint="#000000"
+            android:fontFamily="@font/montserrat"
+            android:paddingStart="32dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:text="Laporan \nPerbaikan"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMtCar" />
+
+        <Button
+            android:id="@+id/btnHistoryUser"
+            android:layout_width="260dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_homebutton"
+            android:drawableLeft="@drawable/history"
+            android:drawableTint="#000000"
+            android:fontFamily="@font/montserrat"
+            android:paddingStart="32dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:text="Riwayat \nkegiatan"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnRepair" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

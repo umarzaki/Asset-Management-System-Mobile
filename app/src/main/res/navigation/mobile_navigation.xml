@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_detail_car">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.sarprasfilkom.ui.home.FragmentHome"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_form_room"
+            app:destination="@id/nav_form_room" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_form_car"
+            app:destination="@id/nav_form_car" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_form_repair"
+            app:destination="@id/nav_form_repair" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_history_user"
+            app:destination="@id/nav_history_user" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_admin"
+        android:name="com.example.sarprasfilkom.ui.AdminDashboard.FragmentAdminDashboard"
+        android:label="@string/menu_admin"
+        tools:layout="@layout/fragment_admin_dashboard" >
+        <action
+            android:id="@+id/action_nav_admin_to_nav_data_report_room"
+            app:destination="@id/nav_data_report_room" />
+        <action
+            android:id="@+id/action_nav_admin_to_nav_data_report_car"
+            app:destination="@id/nav_data_report_car" />
+        <action
+            android:id="@+id/action_nav_admin_to_nav_data_report_repair"
+            app:destination="@id/nav_data_report_repair" />
+        <action
+            android:id="@+id/action_nav_admin_to_nav_all_staff_history"
+            app:destination="@id/nav_all_staff_history" />
+        <action
+            android:id="@+id/action_nav_admin_to_nav_account_manage"
+            app:destination="@id/nav_account_manage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_guide"
+        android:name="com.example.sarprasfilkom.ui.UserGuide.FragmentUserGuide"
+        android:label="@string/menu_guide"
+        tools:layout="@layout/fragment_user_guide" />
+
+    <fragment
+        android:id="@+id/nav_complaint"
+        android:name="com.example.sarprasfilkom.ui.complaint.FragmentComplaint"
+        android:label="Complaint"
+        tools:layout="@layout/fragment_complaint" >
+        <action
+            android:id="@+id/openDetailComplaint"
+            app:destination="@id/nav_detailComplaint">
+            <argument android:name="ticket"
+                app:argType="string"
+                android:defaultValue="00000001"/>
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.sarprasfilkom.ui.profile.FragmentProfile"
+        android:label="profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_form_room"
+        android:label="Maintenace Room"
+        android:name="com.example.sarprasfilkom.FragmentFormRoom"
+        tools:layout="@layout/fragment_form_room"/>
+
+    <fragment android:id="@+id/nav_form_car"
+        android:name="com.example.sarprasfilkom.FragmentFormCar"
+        android:label="Maintenace Car"
+        tools:layout="@layout/fragment_form_car"/>
+
+    <fragment
+        android:id="@+id/nav_form_repair"
+        android:name="com.example.sarprasfilkom.FragmentFormRepair"
+        android:label="Perbaikan"
+        tools:layout="@layout/fragment_form_repair"/>
+    <fragment
+        android:id="@+id/nav_history_user"
+        android:name="com.example.sarprasfilkom.FragmentHistoryUser"
+        android:label="riwayat kegiatan"
+        tools:layout="@layout/fragment_history_user"/>
+    <fragment
+        android:id="@+id/nav_data_report_room"
+        android:label="data report room"
+        android:name="com.example.sarprasfilkom.FragmentDataRoom"
+        tools:layout="@layout/fragment_data_room">
+        <action
+            android:id="@+id/action_nav_data_report_room_to_nav_detail_room"
+            app:destination="@id/nav_detail_room" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_data_report_car"
+        android:label="data report car"
+        android:name="com.example.sarprasfilkom.FragmentDataCar"
+        tools:layout="@layout/fragment_data_car">
+        <action
+            android:id="@+id/action_nav_data_report_car_to_nav_detail_car"
+            app:destination="@id/nav_detail_car" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_data_report_repair"
+        android:label="data report repair"
+        android:name="com.example.sarprasfilkom.FragmentDataRepair"
+        tools:layout="@layout/fragment_data_repair">
+        <action
+            android:id="@+id/action_nav_data_report_repair_to_nav_detail_repair"
+            app:destination="@id/nav_detail_repair" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_all_staff_history"
+        android:label="all staff history"
+        android:name="com.example.sarprasfilkom.FragmentAllStaffHistory"
+        tools:layout="@layout/fragment_all_staff_history"/>
+    <fragment
+        android:id="@+id/nav_account_manage"
+        android:label="account manage"
+        android:name="com.example.sarprasfilkom.FragmentAccountManage"
+        tools:layout="@layout/fragment_account_manage">
+        <action
+            android:id="@+id/action_nav_account_manage_to_placeholder"
+            app:destination="@id/nav_add_account" />
+        <action
+            android:id="@+id/action_nav_account_manage_to_nav_edit_account"
+            app:destination="@id/nav_edit_account" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_visitor"
+        android:label="E-Complaint"
+        android:name="com.example.sarprasfilkom.FragmentHomeVisitor"
+        tools:layout="@layout/fragment_home_visitor">
+        <action
+            android:id="@+id/action_nav_home_visitor_to_nav_form_complaint"
+            app:destination="@id/nav_form_complaint" />
+        <action
+            android:id="@+id/action_nav_home_visitor_to_nav_track_complaint"
+            app:destination="@id/nav_track_complaint" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_form_complaint"
+        android:label="form Keluhan"
+        android:name="com.example.sarprasfilkom.FragmentFormComplaint"
+        tools:layout="@layout/fragment_form_complaint"/>
+    <fragment
+        android:id="@+id/nav_track_complaint"
+        android:label="track Laporan Keluhan"
+        android:name="com.example.sarprasfilkom.FragmentTrackComplaint"
+        tools:layout="@layout/fragment_track_complaint"/>
+    <fragment
+        android:id="@+id/nav_detailComplaint"
+        android:label="rincian keluhan"
+        android:name="com.example.sarprasfilkom.FragmentDetailComplaint"
+        tools:layout="@layout/fragment_detail_complaint">
+        <argument
+            android:name="ticket"
+            app:argType="string"
+            android:defaultValue="00000000" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.example.sarprasfilkom.FragmentNotification"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/nav_add_account"
+        android:name="com.example.sarprasfilkom.FragmentAddAccount"
+        android:label="Tambah Pengguna"
+        tools:layout="@layout/fragment_add_account"
+        />
+
+    <fragment
+        android:id="@+id/nav_edit_account"
+        android:name="com.example.sarprasfilkom.FragmentEditAccount"
+        android:label="Edit data pengguna"
+        tools:layout="@layout/fragment_edit_account"
+        />
+    <fragment
+        android:id="@+id/nav_detail_room"
+        android:name="com.example.sarprasfilkom.FragmentDetailRoom"
+        android:label="fragment_detail_room"
+        tools:layout="@layout/fragment_detail_room" />
+    <fragment
+        android:id="@+id/nav_detail_repair"
+        android:name="com.example.sarprasfilkom.FragmentDetailRepair"
+        android:label="fragment_detail_repair"
+        tools:layout="@layout/fragment_detail_repair" />
+    <fragment
+        android:id="@+id/nav_detail_car"
+        android:name="com.example.sarprasfilkom.FragmentDetailCar"
+        android:label="fragment_detail_car"
+        tools:layout="@layout/fragment_detail_car" />
+</navigation>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentDetailRepair">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_DetailRepairBefore"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_baseline_panorama_24"
+            app:layout_constraintEnd_toStartOf="@+id/iv_DetailRepairAfter"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_DetailRepairAfter"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_baseline_panorama_24"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_DetailRepairBefore"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_DetailRepairBefore"
+            app:layout_constraintTop_toTopOf="@+id/iv_DetailRepairBefore" />
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foto Kerusakan"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_DetailRepairBefore"
+            app:layout_constraintStart_toStartOf="@+id/iv_DetailRepairBefore"
+            app:layout_constraintTop_toBottomOf="@+id/iv_DetailRepairBefore" />
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foto Perbaikan"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_DetailRepairAfter"
+            app:layout_constraintStart_toStartOf="@+id/iv_DetailRepairAfter"
+            app:layout_constraintTop_toBottomOf="@+id/iv_DetailRepairAfter" />
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Nomor Laporan"
+            android:fontFamily="@font/montserrat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+        <TextView
+            android:id="@+id/DetailRepairId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView59"
+            app:layout_constraintTop_toTopOf="@+id/textView59" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Nama kegiatan"
+            android:fontFamily="@font/montserrat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+        <TextView
+            android:id="@+id/DetailRepairName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView61"
+            app:layout_constraintTop_toTopOf="@+id/textView61" />
+
+        <TextView
+            android:id="@+id/textView63"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Penanggung Jawab"
+            android:fontFamily="@font/montserrat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView61" />
+
+        <TextView
+            android:id="@+id/DetailRepairStaff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView63" />
+
+        <TextView
+            android:id="@+id/textView65"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Tanggal"
+            android:fontFamily="@font/montserrat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView63" />
+
+        <TextView
+            android:id="@+id/DetailRepairDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView65"
+            app:layout_constraintTop_toTopOf="@+id/textView65" />
+
+        <TextView
+            android:id="@+id/textView67"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="keterangan"
+            android:fontFamily="@font/montserrat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView65" />
+
+        <TextView
+            android:id="@+id/StatusDetailRepair"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="status"
+            android:fontFamily="@font/montserrat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DetailRepairDesc" />
+
+        <TextView
+            android:id="@+id/DetailRepairStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/StatusDetailRepair"
+            app:layout_constraintTop_toBottomOf="@+id/DetailRepairDesc" />
+
+        <TextView
+            android:id="@+id/DetailRepairDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView67"
+            app:layout_constraintTop_toTopOf="@+id/textView67" />
+
+        <Button
+            android:id="@+id/btn_VerifyRepair"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_loginbtn"
+            android:fontFamily="@font/montserrat"
+            android:text="Verifikasi Laporan"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/StatusDetailRepair" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

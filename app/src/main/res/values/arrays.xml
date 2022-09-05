@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="staffName">
+        <item>John Doe</item>
+        <item>Jane Doe</item>
+        <item>George Doe</item>
+        <item>Steve Doe</item>
+        <item>Catherine Doe</item>
+    </string-array>
+    <string-array name="reportNumber">
+        <item>1230001</item>
+        <item>1230002</item>
+        <item>1230003</item>
+        <item>1230004</item>
+        <item>1240001</item>
+    </string-array>
+    <string-array name="eventName">
+    <item>Pemeliharaan Ruang</item>
+    <item>Pemeliharaan Ruang</item>
+    <item>Pemeliharaan Ruang</item>
+    <item>Pemeliharaan Ruang</item>
+    <item>Pemeliharaan Kendaraan dinas</item>
+    </string-array>
+    <string-array name="userHistoryDate">
+        <item>22/12/2020</item>
+        <item>23/12/2020</item>
+        <item>24/12/2020</item>
+        <item>25/12/2020</item>
+        <item>26/12/2020</item>
+    </string-array>
+    <string-array name="complaintlist">
+        <item>123445</item>
+        <item>123446</item>
+        <item>123447</item>
+        <item>123448</item>
+        <item>123449</item>
+    </string-array>
+    <string-array name="complaintstatus">
+        <item>open</item>
+        <item>open</item>
+        <item>closed</item>
+        <item>closed</item>
+        <item>open</item>
+    </string-array>
+    <string-array name="staffRole">
+        <item>staff Lapangan</item>
+        <item>staff Lapangan</item>
+        <item>staff Lapangan</item>
+        <item>staff Lapangan</item>
+        <item>staff Lapangan</item>
+    </string-array>
+    <string-array name="NamaRuang">
+        <item>F201</item>
+        <item>F202</item>
+        <item>F203</item>
+        <item>F204</item>
+        <item>F205</item>
+    </string-array>
+    <string-array name="roomAsset" >
+        <item>Pintu</item>
+        <item>Projector/TV</item>
+        <item>Kabel VGA/HDMI</item>
+        <item>Meja</item>
+        <item>Kursi</item>
+        <item>Lampu</item>
+        <item>Listrik</item>
+    </string-array>
+    <string-array name="carpart">
+        <item>Lampu</item>
+        <item>Sign Lamp</item>
+        <item>Tekanan Ban</item>
+        <item>Air radiator dan washer</item>
+        <item>Aki</item>
+        <item>Fog lamp</item>
+        <item>Oli</item>
+    </string-array>
+    <string-array name="descNotif">
+        <item>melakukan pemeriksaan rutin ruang</item>
+        <item>melakukan pemeriksaan rutin kendaraan dinas</item>
+        <item>melakukan perbaikan</item>
+        <item>melakukan perbaikan</item>
+        <item>melakukan pemeriksaan rutin ruang</item>
+    </string-array>
+    <string-array name="timeNotif">
+        <item>5m Ago</item>
+        <item>10m Ago</item>
+        <item>20m Ago</item>
+        <item>1h Ago</item>
+        <item>2h Ago</item>
+    </string-array>
+    <string-array name="jabatan">
+        <item>staff</item>
+        <item>staff admin</item>
+        <item>kepala unit</item>
+        <item>KTU</item>
+        <item>dekan</item>
+        <item>wakil dekan</item>
+        <item>sekretaris</item>
+        <item>dosen</item>
+        <item>satpam</item>
+        <item>lainnya</item>
+    </string-array>
+    <string-array name="unit">
+        <item>umum dan perlengkapan</item>
+        <item>umum dan keuangan</item>
+        <item>akademik</item>
+        <item>kepegawaian</item>
+        <item>psik</item>
+        <item>kerjasama dan kehumasan</item>
+        <item>lainnya</item>
+    </string-array>
+    <string-array name="JenisPerbaikan" >
+        <item>pemeliharaan insidentil</item>
+        <item>pemeliharaan rutin</item>
+        <item>pemeliharaan keluhan</item>
+    </string-array>
+</resources>

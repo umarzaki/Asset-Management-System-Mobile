@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AdminDashboard.FragmentAdminDashboard">
+
+    <Button
+        android:id="@+id/btnDataMtRoom"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg_adminbutton"
+        android:fontFamily="@font/montserrat"
+        android:text="Data Laporan \nPemeliharaan Ruang"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDataMtCar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg_adminbutton"
+        android:fontFamily="@font/montserrat"
+        android:text="Data Laporan \nPemeliharaan Kendaraan dinas"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDataMtRoom" />
+
+    <Button
+        android:id="@+id/btnDataRepair"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg_adminbutton"
+        android:fontFamily="@font/montserrat"
+        android:text="Data Laporan Perbaikan"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDataMtCar" />
+
+    <Button
+        android:id="@+id/btnStaffHistory"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg_adminbutton"
+        android:fontFamily="@font/montserrat"
+        android:text="Riwayat kegiatan seluruh staff"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDataRepair" />
+
+    <Button
+        android:id="@+id/btnAccountManage"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg_adminbutton"
+        android:fontFamily="@font/montserrat"
+        android:text="Kelola Data Akun Staff"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStaffHistory" />
+</androidx.constraintlayout.widget.ConstraintLayout>

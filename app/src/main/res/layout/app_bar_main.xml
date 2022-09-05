@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityHome">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="192dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_appbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:toolbarId="@+id/toolbar_Layout"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+
+            app:contentScrim="?attr/colorPrimary">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/appbarLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginStart="60dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_appbarlabel">
+                <TextView
+                    android:id="@+id/appbarLabelName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="John Doe"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/appbarLabelRole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="16dp"
+                    android:text="staff lapangan"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">>
+                    <TextView
+                        android:id="@+id/toolbarTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="300dp"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="18sp"
+                        android:text="Selamat datang"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
